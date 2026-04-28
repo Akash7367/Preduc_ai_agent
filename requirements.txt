@@ -1,0 +1,22 @@
+# Core CV / ML
+ultralytics>=8.2.0
+supervision>=0.21.0
+opencv-python>=4.9.0
+
+# Video download
+yt-dlp>=2024.3.10
+
+# Analytics & plotting
+matplotlib>=3.8.0
+numpy>=1.26.0
+
+# Optional GPU acceleration (uncomment if using NVIDIA GPU)
+# torch>=2.2.0+cu118
+# torchvision>=0.17.0+cu118
+
+# Notebook support
+jupyter>=1.0.0
+ipywidgets>=8.1.0
+
+# Demo app deployment
+streamlit>=1.36.0

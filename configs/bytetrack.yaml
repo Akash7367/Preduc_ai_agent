@@ -1,0 +1,29 @@
+# ByteTrack configuration — tuned for sports footage
+# -------------------------------------------------------
+# These values override the Ultralytics / supervision defaults
+# to improve ID stability in crowded, fast-motion scenes.
+
+tracker_type: bytetrack
+
+# Minimum confidence score to initialise a new track.
+# Lowered from default 0.25 to allow partial / occluded players.
+track_high_thresh: 0.5
+
+# Low-confidence detection buffer threshold.
+# Detections below track_high_thresh but above this value are kept
+# in a secondary buffer and matched to existing tracks (handles occlusion).
+track_low_thresh: 0.1
+
+# Minimum IoU overlap for a tentative track to be confirmed as a real track.
+new_track_thresh: 0.35
+
+# Number of frames to keep a 'lost' track alive before deleting it.
+# 60 frames = ~2 seconds at 30 fps — enough to survive brief occlusions.
+track_buffer: 60
+
+# Minimum IoU for matching detections to existing tracks.
+match_thresh: 0.80
+
+# Frame rate of the input video (used to scale track_buffer duration).
+# Will be overridden at runtime by the actual video fps.
+frame_rate: 30
