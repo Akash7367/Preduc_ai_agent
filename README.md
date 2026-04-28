@@ -1,6 +1,7 @@
 # Multi-Object Detection & Persistent ID Tracking
 
 > **Assignment:** AI / Computer Vision / Data Science  
+> **Live Demo:** [Streamlit App](https://akash7367-preduc-ai-agent-app-iqx3qt.streamlit.app/)  
 > **Video Source:** [FIFA World Cup 2022 Match Highlights — YouTube](https://www.youtube.com/watch?v=l7KpNAa3NhA)  
 > **Detector:** YOLOv8m (Ultralytics)  
 > **Tracker:** ByteTrack (via `supervision`)
